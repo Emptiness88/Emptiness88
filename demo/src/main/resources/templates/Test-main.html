@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Тестовые данные</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+</head>
+<body>
+<header th:insert="Blocks/header :: header"></header>
+<div class="container mt-5">
+    <h1>Тестовые данные</h1>
+<!--  данные из базы(думал сначала, что есть функции которые могут снимать метрики, по этому сделал переменные)-->
+<!--  но функций не нашел, и планировал подключить прометеус, который при вызове endpoint-а будет передавать данные в бд  -->
+<!--    <div th:each="el:${posts}" class="alert alert-info mt-2">-->
+<!--        <h3 th:text="${el.timent}"/>-->
+<!--        <p th:="${el.}"/>-->
+<!--    </div>-->
+
+</div>
+<div th:insert="Blocks/footer :: footer"></div>
+
+</body>
+</html>
